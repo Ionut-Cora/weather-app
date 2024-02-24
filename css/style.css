@@ -37,6 +37,7 @@ body {
 .input-div {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 .input-text {
@@ -52,12 +53,26 @@ body {
 
 .content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .content div {
     text-align: center;
+}
+
+.description h3,
+.description p {
+    margin-bottom: 0.5rem;
+}
+
+.description h3 {
+    text-transform: capitalize;
+}
+
+.description span {
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .submit {
@@ -86,4 +101,18 @@ footer {
     width: 100%;
     color: #fff;
     background: #000000a1;
+}
+
+@media only screen and (max-width: 576px) {
+    .input-div {
+        margin: auto 5px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .temperature {
+        margin-bottom: 1rem;
+    }
 }
