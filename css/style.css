@@ -61,6 +61,18 @@ body {
     text-align: center;
 }
 
+.temperature {
+    margin-right: 2rem;
+}
+
+.temperature h1 {
+    font-size: 3rem;
+}
+
+.description {
+    margin-left: 2rem;
+}
+
 .description h3,
 .description p {
     margin-bottom: 0.5rem;
@@ -105,6 +117,10 @@ footer {
 }
 
 @media only screen and (max-width: 576px) {
+    .big-content {
+        height: 100%;
+    }
+
     .input-div {
         margin: auto 5px;
     }
@@ -114,6 +130,10 @@ footer {
     }
 
     .temperature {
-        margin-bottom: 1rem;
+        margin: 2rem 0 1rem;
+    }
+
+    .description {
+        margin-left: 0;
     }
 }
