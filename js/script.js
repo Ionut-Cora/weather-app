@@ -38,16 +38,15 @@ displayContent = data => {
             
     content.innerHTML = `
         <div class="temperature">
-            <h2>` + name + `</h2>
-            <h4>` + country + `</h4>
-            <h1>` + temp + `°C</h1>
             <img src = https://openweathermap.org/img/wn/` + icon + `.png >
+            <h2>` + name + ` / ` + country + `</h2>
+            <h1>` + temp + `°C</h1>
+            <p>Feels like <span>` + feels_like + `°C</span></p>
         </div>
         <div class="description">
             <h3>` + description + `</h3>     
             <p>Humidity <span>` + humidity + `%</span></p>
             <p>Wind speed <span>` + speed + `km/h</span></p>
-            <p>Feels like <span>` + feels_like + `°C</span></p>
             <p>Pressure <span>` + pressure + `hPa</span></p>
             <p>Visibility <span>` + visibility + `km</span></p>
             <p>Low <span>` + temp_min + `°C</span></p>
