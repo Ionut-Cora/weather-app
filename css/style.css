@@ -101,6 +101,7 @@ footer {
     width: 100%;
     color: #fff;
     background: #000000a1;
+    padding: 1rem;
 }
 
 @media only screen and (max-width: 576px) {
